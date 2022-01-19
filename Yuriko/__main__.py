@@ -84,13 +84,13 @@ yurikorobot_IMG = "https://telegra.ph/file/8b6f8f2bb4ff3912634c7.jpg"
 PM_START_TEXT = """
 *👋 Hello {} !*
 
-✗ *I'Aᴍ Aɴ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*
-✗ *Aᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ  Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ  I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ  Fᴇᴀᴛᴜʀᴇꜱ!*
+✗ *𝘏𝘪 𝘯𝘦𝘯𝘶 𝘮𝘦 𝘨𝘳𝘰𝘶𝘱 Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ 𝘯𝘪*
+✗ *NANU ME GROUP LO ADD CHESUKONDI☺ NENU ADVANCE MANAGEMENT BOT NI!*
 ────────────────────────
 × *Uᴘᴛɪᴍᴇ:* `{}`
 × `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
 ────────────────────────
-✗ *Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+✗ *Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Music Network!*
 """
 
 buttons = [
@@ -99,19 +99,19 @@ buttons = [
             text="Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="Aꜱꜱɪꜱᴛᴀɴᴛ", callback_data="yurikorobot_asst"),
+        InlineKeyboardButton(text="Aꜱꜱɪꜱᴛᴀɴᴛ", callback_data="Santhuvcplayerbot_asst"),
         InlineKeyboardButton(
             text="Iɴʟɪɴᴇ", switch_inline_query_current_chat=""
         ),
     ],
     [
-        InlineKeyboardButton(text="Aʙᴏᴜᴛ", callback_data="yurikorobot_"),
+        InlineKeyboardButton(text="Aʙᴏᴜᴛ", callback_data="Santhuvcplayerbot_"),
         InlineKeyboardButton(
-            text="Bᴀꜱɪᴄ Hᴇʟᴘ", callback_data="yurikorobot_basichelp"
+            text="Bᴀꜱɪᴄ Hᴇʟᴘ", callback_data="Santhuvcplayerbot_basichelp"
         ),
     ],
     [
-        InlineKeyboardButton(text="Sᴜᴍᴍᴏɴ Mᴇ", url="http://t.me/YurikoRobot?startgroup=true"),
+        InlineKeyboardButton(text="➕𝗡𝗔𝗡𝗨 𝗔𝗗𝗗 𝗖𝗛𝗘𝗦𝗨 𝗞𝗢𝗡𝗗𝗜➕", url="http://t.me/Santhuvcplayerbot?startgroup=true"),
     ],
 ]
 
@@ -127,7 +127,7 @@ HELP_STRINGS = """
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- @PiroXPower's 💕"""
+ @santhu_music_bot 💕"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -212,7 +212,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="⬅️ BACK", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="⬅ BACK", callback_data="help_back")]]
                     ),
                 )
 
@@ -248,7 +248,7 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/Decodesupport")]]
+                [[InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/santhuvc")]]
             ),
         )
         
@@ -378,10 +378,10 @@ def help_button(update, context):
 
 def yurikorobot_about_callback(update, context):
     query = update.callback_query
-    if query.data == "yurikorobot_":
+    if query.data == "Santhuvcplayerbot_":
         query.message.edit_text(
-            text=""" *YURIKO* - `A bot to manage your groups with additional features!`
-            \n`Here the basic help regarding use of yurikorobot.`
+            text=""" *SANTHU* - `A bot to manage your groups with additional features!`
+            \n`Here the basic help regarding use of @Santhuvcplayerbot.`
             
             \n`Almost all modules usage defined in the help menu, checkout by sending` `/help`
             \n`Report error/bugs click the Button`""",
@@ -391,17 +391,17 @@ def yurikorobot_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Bᴜɢ'ꜱ", url="t.me/Decodesupport"
+                            text="Bᴜɢ'ꜱ", url="t.me/santhuvc"
                         ),
                         InlineKeyboardButton(
-                            text="Bᴏᴛ Lɪꜱᴛ", url="https://t.me/DeeCodeBots/32"
+                            text="Bᴏᴛ Lɪꜱᴛ", url="https://t.me/santhuvc"
                         ),
                     ],
-                    [InlineKeyboardButton(text="Back", callback_data="yurikorobot_back")],
+                    [InlineKeyboardButton(text="Back", callback_data="Santhuvcplayerbot_back")],
                 ]
             ),
         )
-    elif query.data == "yurikorobot_back":
+    elif query.data == "Santhuvcplayerbot_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
@@ -415,13 +415,13 @@ def yurikorobot_about_callback(update, context):
                 timeout=60,
                 disable_web_page_preview=False,
         )
-    elif query.data == "yurikorobot_basichelp":
+    elif query.data == "Santhuvcplayerbot_basichelp":
         query.message.edit_text(
             text=f"*Here's basic Help regarding* *How to use Me?*"
             
             f"\n\n✗ `Firstly Add` {dispatcher.bot.first_name} `to your group by pressing` [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n✗ `After adding promote me manually with full rights for faster experience.`\n"
-            f"\n✗ `Than send` `/admincache@YurikoRobot` `in that chat to refresh admin list in My database.`\n"
+            f"\n✗ `Than send` `/admincache@Santhuvcplayerbot` `in that chat to refresh admin list in My database.`\n"
             f"\n\n*All done now use below given button's to know about use!*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
@@ -429,25 +429,25 @@ def yurikorobot_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Aᴅᴍɪɴ", callback_data="yurikorobot_admin"),
-                    InlineKeyboardButton(text="Nᴏᴛᴇꜱ", callback_data="yurikorobot_notes"),
+                    InlineKeyboardButton(text="Aᴅᴍɪɴ", callback_data="Santhuvcplayerbot_admin"),
+                    InlineKeyboardButton(text="Nᴏᴛᴇꜱ", callback_data="Santhuvcplayerbot_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", callback_data="yurikorobot_support"),
-                    InlineKeyboardButton(text="Cʀᴇᴅɪᴛ", callback_data="yurikorobot_credit"),
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", callback_data="Santhuvcplayerbot_support"),
+                    InlineKeyboardButton(text="Cʀᴇᴅɪᴛ", callback_data="Santhuvcplayerbot_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="yurikorobot_back"),
+                    InlineKeyboardButton(text="Back", callback_data="Santhuvcplayerbot_back"),
                  
                  ]
                 ]
             ),
         )
-    elif query.data == "yurikorobot_admin":
+    elif query.data == "Santhuvcplayerbot_admin":
         query.message.edit_text(
             text=f"*Let's Make Your Group Bit Effective Now*"
             
-            f"\n✗ `Congragulations, YurikoRobot now ready to manage your group.`"
+            f"\n✗ `Congragulations, Santhuvcplayerbot now ready to manage your group.`"
             f"\n\n*Admin Tools*"
             f"\n✗ `Basic Admin tools help you to protect and powerup your group.`"
             f"\n✗ `You can ban members, Kick members, Promote someone as admin through commands of bot.`"
@@ -457,11 +457,11 @@ def yurikorobot_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="yurikorobot_basichelp")]]
+                [[InlineKeyboardButton(text="Back", callback_data="Santhuvcplayerbot_basichelp")]]
             ),
         )
 
-    elif query.data == "yurikorobot_notes":
+    elif query.data == "Santhuvcplayerbot_notes":
         query.message.edit_text(
             text=f"<b> Setting Up Notes</b>"
             
@@ -470,10 +470,10 @@ def yurikorobot_about_callback(update, context):
             f"\n\n`✗ You can also set buttons for notes and filters (refer help menu)`",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="yurikorobot_basichelp")]]
+                [[InlineKeyboardButton(text="Back", callback_data="Santhuvcplayerbot_basichelp")]]
             ),
         )
-    elif query.data == "yurikorobot_asst":
+    elif query.data == "Santhuvcplayerbot_asst":
         query.message.edit_text(
             text=f"*Hᴇʀᴇ Iꜱ Tʜᴇ Hᴇʟᴘ 「Aꜱꜱɪꜱᴛᴀɴᴛ」 Mᴏᴅᴜʟᴇ:*"
             
@@ -483,18 +483,18 @@ def yurikorobot_about_callback(update, context):
             f"\n\n✗ `3.) add` @YurikoPlugin `to your group:`"
             f"\n\n✗ `4.) turn on the video chat first before start to play music.`"
             f"\n\n✗ *Lets Enjoy The Yuriko Music And Join Support Group @DeCodeSupport*"
-            f"\n\n*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*",
+            f"\n\n*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: santhuvc!*",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="yurikorobot_back")]]
+                [[InlineKeyboardButton(text="Back", callback_data="Santhuvcplayerbot_back")]]
             ),
         )
-    elif query.data.data == "yurikorobot_admin":
+    elif query.data.data == "Santhuvcplayerbot_admin":
         query.message.edit_text(
             text=f"*Let's Make Your Group Bit Effective Now*"
             
-            f"\n✗ `Congragulations, YurikoRobot now ready to manage your group.`"
+            f"\n✗ `Congragulations, Santhuvcplayerbot now ready to manage your group.`"
             f"\n\n*Admin Tools*"
             f"\n✗ `Basic Admin tools help you to protect and powerup your group.`"
             f"\n✗ `You can ban members, Kick members, Promote someone as admin through commands of bot.`"
@@ -504,27 +504,27 @@ def yurikorobot_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="yurikorobot_basichelp")]]
+                [[InlineKeyboardButton(text="Back", callback_data="Santhuvcplayerbot_basichelp")]]
             ),
         )    
-    elif query.data == "yurikorobot_support":
+    elif query.data == "Santhuvcplayerbot_support":
         query.message.edit_text(
-            text="* YURIKO Support Chats*"
+            text="* 𝚂𝙰𝙽𝚃𝙷𝚄 Support Chats*"
             
             "\n\n✗ `Join Support Group/Channel`",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Lᴏɢ'ꜱ", url="t.me/YurikoLogs"),
-                    InlineKeyboardButton(text="Nᴇᴡꜱ", url="t.me/Deecodenews"),
+                    InlineKeyboardButton(text="Lᴏɢ'ꜱ", url="t.me/santhuvc"),
+                    InlineKeyboardButton(text="SUPPORT", url="t.me/santhuvc"),
                  ],
                  [
-                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/Decodesupport"),
-                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/deecodebots"),
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/santhuvc"),
+                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/santhuvc"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="yurikorobot_basichelp"),
+                    InlineKeyboardButton(text="Back", callback_data="Santhuvcplayerbot_basichelp"),
                  
                  ]
                 ]
@@ -532,22 +532,22 @@ def yurikorobot_about_callback(update, context):
         )
     elif query.data == "yurikorobot_credit":
         query.message.edit_text(
-            text=f"<b> CREDIT FOR YURIKO DEV'S</b>\n"
+            text=f"<b> CREDIT FOR 𝗦𝗔𝗡𝗧𝗛𝗨 DEV'S</b>\n"
             
-            f"\n`✗ Here Some Developers Helping in Making The Yuriko Bot`",
+            f"\n`✗ Here Some Developers Helping in Making The 𝘀𝗮𝗻𝘁𝗵𝘂 𝗯𝗼𝘁`",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="BʀᴀʏDᴇɴ", url="t.me/BrayDenXD"),
-                    InlineKeyboardButton(text="Bʟᴀᴢᴇ", url="t.me/piroXpower"),
+                    InlineKeyboardButton(text="SANTHU GROUP", url="t.me/santhuvc"),
+                    InlineKeyboardButton(text="𝓢𝓐𝓝𝓣𝓗𝓤 𝓓𝓐𝓡𝓛𝓞𝓝𝓖", url="t.me/santhuvc"),
                  ],
                  [
-                    InlineKeyboardButton(text="Sʜᴜʙʜᴀɴꜱʜᴜ", url="t.me/Shubhanshutya"),
-                    InlineKeyboardButton(text="Dᴇ Cᴏᴅᴇ", url="https://t.me/TeamDeeCode"),
+                    InlineKeyboardButton(text="𝕊𝚊𝚗𝚝𝚑𝚞 𝙉𝙚𝙩𝙬𝙤𝙧𝙠", url="t.me/santhuvc"),
+                    InlineKeyboardButton(text="𝚂𝚊𝚗𝚝𝚑𝚞 𝚅𝚌 𝚂𝚞𝚙𝚙𝚘𝚛𝚝", url="https://t.me/santhuvc"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="yurikorobot_basichelp"),
+                    InlineKeyboardButton(text="Back", callback_data="Santhuvcplayerbot_basichelp"),
                  
                  ]
                 ]
@@ -560,8 +560,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..😻 I'm *yurikorobot*
-                 \nHere is the [🔥Source Code🔥](https://github.com/TeamDeeCode) .""",
+            text=""" Hi..😻 I'm *Santhuvcplayerbot*
+                 \nHere is the [🔥Source Code🔥](https://t.me/santhuvc) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -814,7 +814,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1947924017 and DONATION_LINK:
+        if OWNER_ID != 5023234844 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -862,7 +862,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "`I Aᴍ Aʟɪᴠᴇ` 🔥")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "`𝙽𝙴𝙽𝚄 𝚄𝙽𝙰𝙽𝚄` 😝")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
@@ -879,7 +879,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(yurikorobot_about_callback, pattern=r"yurikorobot_")
+    about_callback_handler = CallbackQueryHandler(Santhuvcplayerbot_about_callback, pattern=r"Santhuvcplayerbot_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)
