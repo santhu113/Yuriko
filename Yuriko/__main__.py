@@ -79,8 +79,8 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-yurikorobot_IMG = "https://telegra.ph/file/8b6f8f2bb4ff3912634c7.jpg"
-
+Santhuvcplayerbot_IMG = "https://te.legra.ph/file/422292c9fb5561a9be9c6.jpg"
+--------------------🌺🌻🌹🌷--------------------------🌺🌻🌹🌷--------------
 PM_START_TEXT = """
 *👋 Hello {} !*
 
